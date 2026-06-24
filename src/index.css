@@ -1,0 +1,64 @@
+:root {
+  --bg: #0b0e1a;
+  --bg-soft: #11152a;
+  --panel: #151a33;
+  --line: #262b4a;
+  --violet: #7c5cff;
+  --pink: #ff3d9a;
+  --lime: #3dffc1;
+  --amber: #ffb23d;
+  --text: #f1effa;
+  --text-dim: #9b9fc0;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.bg-glow {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(circle at 15% 10%, rgba(124, 92, 255, 0.18), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(255, 61, 154, 0.14), transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(61, 255, 193, 0.08), transparent 50%);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
