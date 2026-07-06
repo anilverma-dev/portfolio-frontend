@@ -52,7 +52,7 @@ function Contact({ profile }) {
         <h2>Let's Work Together</h2>
       </div>
       <div className="contact-panel">
-        <div>
+        <div className="contact-info">
           <h2>Say hello 👋</h2>
           <p className="lead">
             Have a project in mind, or just want to talk shop? My inbox is always open — I try
@@ -91,7 +91,7 @@ function Contact({ profile }) {
             </a>
           </div>
         </div>
-        <form onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit}>
           <div className="field">
             <label htmlFor="name">Name</label>
             <input id="name" name="name" value={form.name} onChange={handleChange} required />

@@ -8,27 +8,19 @@ function About({ profile }) {
         <h2>Bio &amp; Skillset</h2>
       </div>
       <div className="about-grid">
-        <div>
+        <div className="about-text">
           <p>{profile.about}</p>
           <ul className="info-list">
-            <li>
-              <b>Location:</b> {profile.location}
-            </li>
-            <li>
-              <b>Email:</b> {profile.email}
-            </li>
-            <li>
-              <b>Phone:</b> {profile.phone}
-            </li>
+            <li><b>Location:</b> <span>{profile.location}</span></li>
+            <li><b>Email:</b> <span>{profile.email}</span></li>
+            <li><b>Phone:</b> <span>{profile.phone}</span></li>
           </ul>
         </div>
         <div className="skills-panel">
           <div className="label">// tech I work with</div>
           <div className="pill-wrap">
             {profile.skills.map((s) => (
-              <span className="pill" key={s}>
-                {s}
-              </span>
+              <span className="pill" key={s}>{s}</span>
             ))}
           </div>
         </div>
