@@ -8,12 +8,14 @@
   font-size: 13px;
   margin-bottom: 10px;
   display: block;
+  
 }
 
 .section-head h2 {
   font-family: var(--font-display);
   font-size: clamp(26px, 4vw, 38px);
   font-weight: 700;
+  
 }
 
 .about-grid {
@@ -23,6 +25,7 @@
   align-items: start;
   overflow-x: hidden;
   width: 100%;
+  padding: 0 2px;
 }
 
 .about-text p {
@@ -104,8 +107,17 @@
   .skills-panel { position: static; }
 }
 
+@media (max-width: 769px){
+  .section-tag {padding-left: 14px;}
+  .section-head h2 {padding-left: 14px;}
+  .about-grid {padding: 0 15px;}
+}
+
 @media (max-width: 480px) {
   .info-list li { flex-direction: column; gap: 2px; }
+  .section-tag {padding-left: 14px;}
+  .section-head h2 {padding-left: 14px;}
+  .about-grid {padding: 0 15px;}
 }
 
 @media (max-width: 380px) {
