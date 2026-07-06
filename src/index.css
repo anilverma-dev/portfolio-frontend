@@ -73,5 +73,5 @@ input, textarea { font-family: inherit; }
 }
 
 @media (max-width: 480px) {
-  .container { padding: 0 var(--space-sm); }
+  .container { padding: 0 20px; }
 }

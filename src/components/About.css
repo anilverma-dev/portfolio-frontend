@@ -100,3 +100,9 @@
 @media (max-width: 480px) {
   .info-list li { flex-direction: column; gap: 2px; }
 }
+
+@media (max-width: 380px) {
+  .about-grid { gap: 20px; }
+  .info-list li { font-size: 12px; }
+  .section-head h2 { font-size: 22px; }
+}
